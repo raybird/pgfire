@@ -1,0 +1,24 @@
+{
+  "name": "@pgfire/cli",
+  "version": "0.1.0",
+  "description": "CLI tools for migration, authentication token generation, and server management for PgFire",
+  "main": "./dist/bin.js",
+  "bin": {
+    "pgfire": "./dist/bin.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc && chmod +x dist/bin.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@pgfire/core": "workspace:*",
+    "@pgfire/server": "workspace:*",
+    "commander": "^12.1.0",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.6"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@pgfire/core",
+  "version": "0.1.0",
+  "description": "Core engine for PgFire: query builder, serializer, triggers, and types",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.6"
+  }
+}

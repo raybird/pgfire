@@ -1,0 +1,19 @@
+{
+  "name": "@pgfire/client",
+  "version": "0.1.0",
+  "description": "Client SDK with SSE transport for PgFire",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@pgfire/core": "workspace:*"
+  },
+  "devDependencies": {
+    "eventsource": "^2.0.2"
+  }
+}

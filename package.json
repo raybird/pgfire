@@ -1,0 +1,16 @@
+{
+  "name": "pgfire-monorepo",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "pnpm --filter \"@pgfire/*\" build",
+    "test": "pnpm --filter \"@pgfire/*\" test",
+    "lint": "pnpm --filter \"@pgfire/*\" lint"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
